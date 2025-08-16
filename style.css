@@ -198,3 +198,7 @@ ul{ margin:0; padding:0; list-style:none }
   }
   .card{ will-change: transform; }
 }
+
+
+/* DEBUG: show page even if hydration fails */
+[data-framer-root] { opacity: 1 !important; }
