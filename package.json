@@ -1,0 +1,8 @@
+{
+  "name": "ittijoseph-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio site for Itti Joseph",
+  "scripts": {
+    "test": "echo 'No tests specified' && exit 0"
+  }
+}
