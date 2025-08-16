@@ -31,6 +31,7 @@
 * { box-sizing: border-box; }
 html, body { margin:0; padding:0; }
 body{
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   font-family: 'WOMBAT Regular', sans-serif;
   background: var(--bg);
   color: var(--text);
@@ -40,6 +41,7 @@ body{
 }
 
 h1,h2,h3{
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   font-family: 'WOMBAT Regular', sans-serif;
   letter-spacing: -0.02em;
   line-height: 1.15;
