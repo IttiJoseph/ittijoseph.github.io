@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Itti Joseph — Product Designer</title>
-  <meta name="description" content="Portfolio of Itti Joseph — product designer focusing on Microsoft Lists for Android, SharePoint Start, and OneDrive annotations." />
+  <meta name="description" content="Portfolio of Itti Joseph — product designer with work on Microsoft Lists (Android), SharePoint Start, and OneDrive annotations; currently at ServiceNow." />
+
+  <!-- Fonts: Inter (body) + Inter Tight (headings) -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- If you want Google Fonts for now; later you can self-host into /assets/fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="assets/logos/site-mark.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0b0b0c">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -17,8 +21,8 @@
   <header class="site-header">
     <div class="container">
       <a class="brand" href="/" aria-label="Itti Joseph Home">
-        <img src="assets/logos/site-mark.svg" alt="" class="brand-mark">
-        <span class="brand-text">Itti Joseph</span>
+        <span class="brand-mark" aria-hidden="true">IJ</span>
+        <span class="brand-text">Itti&nbsp;Joseph</span>
       </a>
       <nav class="site-nav" aria-label="Primary">
         <ul>
@@ -27,8 +31,13 @@
           <li><a href="#about">About</a></li>
           <li><a class="btn btn--outline" href="/Itti_Joseph_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
           <li>
-            <a class="icon-link" href="https://www.linkedin.com/in/ittijoseph" target="_blank" rel="noopener">
-              <img src="assets/icons/icon-linkedin.svg" alt="LinkedIn">
+            <a class="icon-link" href="mailto:itti.joseph@gmail.com" aria-label="Email">
+              <img src="assets/icons/email.svg" alt="" width="20" height="20">
+            </a>
+          </li>
+          <li>
+            <a class="icon-link" href="https://www.linkedin.com/in/ittijoseph" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <img src="assets/icons/linkedin.svg" alt="" width="20" height="20">
             </a>
           </li>
         </ul>
@@ -38,70 +47,73 @@
 
   <main id="main">
     <!-- HERO -->
-    <section class="section-hero">
+    <section class="section-hero reveal" aria-label="Intro">
       <div class="container grid grid--2">
         <div class="hero-copy">
-          <p class="eyebrow">Hi, I’m</p>
-          <h1 class="hero-title">Itti Joseph</h1>
-          <p class="hero-subtitle">A product designer with 5+ years designing tools used by millions—currently at ServiceNow, previously at Microsoft working on Lists (Android), SharePoint Start, and OneDrive annotations.</p>
+          <p class="eyebrow">Product Designer</p>
+          <h1 class="hero-title">Itti&nbsp;Joseph</h1>
+          <p class="hero-subtitle">
+            Designing calm, practical tools. Currently at ServiceNow. Previously at Microsoft — Lists on Android, SharePoint Start, and OneDrive annotations.
+          </p>
           <div class="hero-cta">
             <a class="btn" href="#work">View my work</a>
             <a class="btn btn--ghost" href="#about">About me</a>
           </div>
         </div>
         <div class="hero-media">
-          <img src="assets/images/hero/hero-portrait.jpg" alt="Portrait of Itti Joseph" class="media-cover">
+          <img class="media-cover" src="assets/images/hero/hero-portrait.jpg" alt="Portrait of Itti Joseph">
         </div>
       </div>
+      <div class="hero-bg" aria-hidden="true"></div>
     </section>
 
     <!-- WORK -->
-    <section id="work" class="section">
+    <section id="work" class="section reveal" aria-labelledby="work-title">
       <div class="container">
         <div class="section-head">
-          <h2>Selected Work</h2>
-          <p class="section-sub">Product case studies from Microsoft & ServiceNow</p>
+          <h2 id="work-title">Selected Work</h2>
+          <p class="section-sub">Microsoft &amp; ServiceNow</p>
         </div>
 
         <div class="card-grid">
           <!-- Case 1 -->
-          <article class="card">
+          <article class="card hover-rise">
             <a class="card-link" href="/work/microsoft-lists-android.html">
               <figure class="card-media">
-                <img src="assets/images/work/work-lists-android-thumb.jpg" alt="Microsoft Lists for Android — case study cover">
+                <img src="assets/images/work/work-lists-android-thumb.jpg" alt="Microsoft Lists Android case study cover">
               </figure>
               <div class="card-body">
-                <h3 class="card-title">Microsoft Lists on Android</h3>
+                <h3 class="card-title">Microsoft Lists — Android</h3>
                 <p class="card-meta">Product Design · Mobile · 2021–2022</p>
-                <p class="card-desc">Designing list creation and collaboration features for mobile teams.</p>
+                <p class="card-desc">Designed creation and collaboration flows for mobile teams.</p>
               </div>
             </a>
           </article>
 
           <!-- Case 2 -->
-          <article class="card">
+          <article class="card hover-rise">
             <a class="card-link" href="/work/sharepoint-start.html">
               <figure class="card-media">
-                <img src="assets/images/work/work-sharepoint-start-thumb.jpg" alt="SharePoint Start — case study cover">
+                <img src="assets/images/work/work-sharepoint-start-thumb.jpg" alt="SharePoint Start case study cover">
               </figure>
               <div class="card-body">
-                <h3 class="card-title">SharePoint — New Start Page</h3>
+                <h3 class="card-title">SharePoint — Start</h3>
                 <p class="card-meta">Product Design · Desktop · 2023</p>
-                <p class="card-desc">A fresher way to rediscover sites, news, and activity across your org.</p>
+                <p class="card-desc">Rediscover sites, news, and activity with clarity.</p>
               </div>
             </a>
           </article>
 
           <!-- Case 3 -->
-          <article class="card">
+          <article class="card hover-rise">
             <a class="card-link" href="/work/onedrive-annotations.html">
               <figure class="card-media">
-                <img src="assets/images/work/work-onedrive-annotations-thumb.jpg" alt="OneDrive annotations — case study cover">
+                <img src="assets/images/work/work-onedrive-annotations-thumb.jpg" alt="OneDrive annotations case study cover">
               </figure>
               <div class="card-body">
-                <h3 class="card-title">OneDrive — Annotation Tools</h3>
-                <p class="card-meta">Product Design · Desktop & Mobile · 2024</p>
-                <p class="card-desc">Improving review workflows with lightweight markup tools for OneDrive.</p>
+                <h3 class="card-title">OneDrive — Annotations</h3>
+                <p class="card-meta">Product Design · Cross-platform · 2024</p>
+                <p class="card-desc">Lightweight markup tools for faster review.</p>
               </div>
             </a>
           </article>
@@ -110,36 +122,36 @@
     </section>
 
     <!-- PLAY -->
-    <section id="play" class="section section--alt">
+    <section id="play" class="section section--alt reveal" aria-labelledby="play-title">
       <div class="container">
         <div class="section-head">
-          <h2>Play</h2>
-          <p class="section-sub">Personal studies and experiments</p>
+          <h2 id="play-title">Play</h2>
+          <p class="section-sub">Studies &amp; experiments</p>
         </div>
 
         <div class="card-grid">
-          <article class="card">
+          <article class="card hover-rise">
             <a class="card-link" href="/play/visual-studies.html">
               <figure class="card-media">
-                <img src="assets/images/play/play-visual-studies-thumb.jpg" alt="Visual studies — thumbnails">
+                <img src="assets/images/play/play-visual-studies-thumb.jpg" alt="Visual studies thumbnails">
               </figure>
               <div class="card-body">
                 <h3 class="card-title">Visual Studies</h3>
-                <p class="card-meta">Sketches & comps</p>
-                <p class="card-desc">Explorations in composition, typography, and rhythm.</p>
+                <p class="card-meta">Sketches &amp; comps</p>
+                <p class="card-desc">Composition, type, rhythm studies.</p>
               </div>
             </a>
           </article>
 
-          <article class="card">
+          <article class="card hover-rise">
             <a class="card-link" href="/play/ui-kit.html">
               <figure class="card-media">
-                <img src="assets/images/play/play-ui-kit-thumb.jpg" alt="UI kit — card and components preview">
+                <img src="assets/images/play/play-ui-kit-thumb.jpg" alt="UI kit preview">
               </figure>
               <div class="card-body">
                 <h3 class="card-title">UI Kit</h3>
                 <p class="card-meta">Reusable components</p>
-                <p class="card-desc">Atoms and patterns used across my projects.</p>
+                <p class="card-desc">Patterns used across projects.</p>
               </div>
             </a>
           </article>
@@ -148,38 +160,38 @@
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="section">
+    <section id="about" class="section reveal" aria-labelledby="about-title">
       <div class="container grid grid--2">
         <div>
-          <h2>About</h2>
-          <p>I’m a product designer focused on practical, calm tools. I’ve shipped at Microsoft and now design cybersecurity tools at ServiceNow. Outside work, I play piano and explore game worlds.</p>
+          <h2 id="about-title">About</h2>
+          <p>I design tools that help people focus. Shipped at Microsoft; now designing cybersecurity tools at ServiceNow. Off-hours: piano and game worlds.</p>
           <ul class="about-list">
             <li>Based in Hyderabad</li>
             <li>5+ years experience</li>
-            <li>Specialities: mobile, productivity, collaboration</li>
+            <li>Mobile · Productivity · Collaboration</li>
           </ul>
         </div>
         <div class="about-media">
-          <img src="assets/images/about/about-avatar.jpg" alt="Itti Joseph — avatar" class="media-cover">
+          <img class="media-cover" src="assets/images/about/about-avatar.jpg" alt="Itti Joseph avatar">
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section section--alt">
+    <section id="contact" class="section section--alt reveal" aria-labelledby="contact-title">
       <div class="container">
         <div class="section-head">
-          <h2>Contact</h2>
+          <h2 id="contact-title">Contact</h2>
           <p class="section-sub">Say hi—always happy to chat.</p>
         </div>
 
         <div class="contact-actions">
           <a class="btn" href="mailto:itti.joseph@gmail.com">
-            <img aria-hidden="true" class="btn-icon" src="assets/icons/icon-email.svg" alt="">
+            <img aria-hidden="true" class="btn-icon" src="assets/icons/email.svg" alt="">
             Email
           </a>
           <a class="btn btn--outline" href="https://www.linkedin.com/in/ittijoseph" target="_blank" rel="noopener">
-            <img aria-hidden="true" class="btn-icon" src="assets/icons/icon-linkedin.svg" alt="">
+            <img aria-hidden="true" class="btn-icon" src="assets/icons/linkedin.svg" alt="">
             LinkedIn
           </a>
           <a class="btn btn--ghost" href="/Itti_Joseph_Resume.pdf" target="_blank" rel="noopener">Resume</a>
@@ -202,8 +214,27 @@
   </footer>
 
   <script>
-    // lightweight year updater
+    // Update year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll for in-page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if (!el) return;
+        e.preventDefault();
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // Reveal on scroll (prefers-reduced-motion respected in CSS)
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('in');
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   </script>
 </body>
 </html>
